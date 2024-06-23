@@ -53,6 +53,11 @@ public class Entity : MonoBehaviour
         }
     }
 
+    public void ScaleObjectByAmount(float amount)
+    {
+        transform.localScale += transform.localScale * amount;
+    }
+
     public void LaunchInDirection(Vector3 direction, float force)
     {
         rigidbody.AddForce(direction * force, ForceMode.Impulse);

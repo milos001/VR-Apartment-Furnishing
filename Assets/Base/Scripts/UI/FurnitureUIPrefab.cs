@@ -10,10 +10,10 @@ public class FurnitureUIPrefab : MonoBehaviour
     [SerializeField]
     private Image _previewImage;
 
-    private UIManager _manager;
+    private HoveringUIManager _manager;
     private FurnitureSO _data;
 
-    public void Initialize(FurnitureSO data, UIManager manager)
+    public void Initialize(FurnitureSO data, HoveringUIManager manager)
     {
         _data = data;
         _manager = manager;
